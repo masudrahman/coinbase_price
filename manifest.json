@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Coinbase Price",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#coinbase price",
+  "homepage_url": "https://github.com/masudrahman/coinbase_price",
+  "icons": {
+    "48": "icons/bitcoin.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/bitcoin.png",
+    "default_title": "Coinbase Price",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
+  ]
+
+}
